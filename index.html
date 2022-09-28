@@ -1,29 +1,102 @@
 <!DOCTYPE html>
 
 <html lang="sk">
-  <head>
-    <meta charset="utf-8" />
-    <title>Domov</title>
+
+<head>
+	<title>Domov</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="/images/ikona.ico">
-  </head>
+    
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <div class="banner">
-    <link
-      rel="stylesheet"
-      href="/css/banner.css"
-    />
-    <a class="active" href="index.html">Domov</a>
-    <a href="rozvrh.html">Rozvrh hodín</a>
-    <a href="kontakt.html">Kontakt</a>
-    <a href="#zaluby">Záľuby</a>
-    <a href="login.html">Prihlásenie</a>
-  </div>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-  <body>
-    <h1 id="top">Marek Guráň</h1>
-    <pre>Som študentom VŠ, študujem INF.
-Dole nižššie nasleduje info o mne:
-    </pre>
-      </body>
+</head>
+<body>
+	<div class="hero">
+		<nav>
+			<h2 class="logo">Do<span>mov</span></h2>
+			<ul>
+				<li><a href="/index.html">Domov</a></li>
+				<li><a href="/rozvrh.html">Rozvrh hodín</a></li>
+				<li><a href="/kontakt.html">Kontakt</a></li>
+				<li><a href="#">Záľuby</a></li>
+				<li><a href="/login.html">Prihlásenie</a></li>
+			</ul>
+			<a href="#" class="btn">Registrovať sa</a>
+		</nav>
+
+		<div class="content">
+			<h4>Ahoj, moje meno je</h4>
+			<h1>Marek <span>Guráň</span></h1>
+			<h3>Som študentom vysokej školy.</h3>
+		</div>
+	</div>
+
+	<section class="about">
+		<div class="main">
+			<img src="/images/MG.jpg">
+			<div class="about-text">
+				<h2>Niečo o mne</h2>
+				<h5>Študent <span>& Geek</span></h5>
+				<p>Som študent vysokej školy na ktorej študujem jednoodborovú informatiku. Dosť sa zaujímam o technológie a hardvér (počítačový a mobilný). Mám vyštudovanú strednú odbornú školu v odbore operátor ofsetových tlačových strojov a zároveň mám Google IT profesionálny certifikát.</p>
+			</div>
+		</div>
+	</section>
+
+	<div class="service">
+		<div class="title">
+			<h2>Our Services</h2>
+		</div>
+
+		<div class="box">
+			<div class="card">
+                <i class="fa fa-github"></i>
+				<h5>Github</h5>
+				<div class="pra">
+					<p>Otvorte si môj GitHub profil.</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="https://github.com/marek-guran">GitHub</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="fa fa-google"></i>
+				<h5>Google certifikát</h5>
+				<div class="pra">
+					<p>Pozrite si môj Google profesionálny certifikát.
+                    </p>
+
+					<p style="text-align: center;">
+						<a class="button" href="https://www.coursera.org/account/accomplishments/professional-cert/534UXK2JHUEK">Pozrieť</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+                <i class='fa fa-envelope'></i>
+				<h5>E-mail</h5>
+				<div class="pra">
+					<p>Napíšte mi e-mail.</p>
+					<p style="text-align: center;">
+						<a class="button" href="#">Napísať e-mail</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<p>Marek Guráň</p>
+		<p>Moje ďalšie sociálne kontakty:</p>
+		<div class="social">
+			<a href="https://www.facebook.com/marek.guran"><i class="fab fa-facebook-f"></i></a>
+			<a href="https://www.instagram.com/marek_guran/"><i class="fab fa-instagram"></i></a>
+		</div>
+	</footer>
+</body>
 </html>
