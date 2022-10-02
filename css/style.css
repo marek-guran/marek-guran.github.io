@@ -4,7 +4,11 @@
 	font-family: 'Josefin Sans', sans-serif;
 	box-sizing: border-box;
 }
-	
+
+.body{
+	overflow: hidden;
+}
+
 .hero{
 	height: 30vw;
 	width: 100vw;
