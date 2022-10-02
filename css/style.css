@@ -49,7 +49,7 @@ nav ul li a:hover{
 	background-color:#2648dd;
 	color: white;
 	text-decoration: none;
-	border: 2px solid transparent;
+	border: 0.1vw solid transparent;
 	font-weight: bold;
 	padding: 0.5vw 1.25vw;
 	border-radius: 1.5vw;
@@ -104,21 +104,21 @@ h4{
 	color: white;
 	font-size: 5vw;
 	text-transform: capitalize;
-	margin-bottom: 20px;
+	margin-bottom: 1vw;
 }
 .about-text h5{
 	color: white;
-	letter-spacing: 2px;
+	letter-spacing: 0.1vw;
 	font-size: 1vw;
-	margin-bottom: 25px;
+	margin-bottom: 1.25vw;
 	text-transform: capitalize;
 }
 .about-text p{
 	color: #fcfc;
-	letter-spacing: 1px;
+	letter-spacing: 0.1vw;
 	line-height: 1.4vw;
 	font-size: 0.9vw;
-	margin-bottom: 45px;
+	margin-bottom: 2.25vw;
 }
 button{
 	background-color:#2648dd;
@@ -195,7 +195,7 @@ h5{
 }
 .card .button:hover{
 	background-color: transparent;
-	border: 2px solid #2648dd;
+	border: 0.1vw solid #2648dd;
 	cursor: pointer;
 }
 .contact-me{
