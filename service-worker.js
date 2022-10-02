@@ -3,7 +3,7 @@ const CACHE_NAME = 'Marek Guráň';
 
 /* Add relative URL of all the static content you want to store in
 * cache storage (this will help us use our app offline)*/
-let resourcesToCache = ["./", "./images/", "./scripts/", "./css/"];
+let resourcesToCache = ["./"];
 
 self.addEventListener("install", e=>{
 e.waitUntil(
