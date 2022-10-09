@@ -3,74 +3,39 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/404.css">
   <title>Chyba 404</title>
-  <style>
-    body {
-      margin: 0;
-      box-sizing: border-box;
-    }
 
-    .container {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      background: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0, 0, 0, .1)), url('images/404.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
+  <body class="bg-purple">
+        
+    <div class="stars">
+        <div class="central-body">
+            <h1>404</h1>
+            <h2>Vyzerá, že ste sa prepadli do neznáma.</h2>
+            <a href="/index.html" class="btn-go-home">DOMOV</a>
+        </div>
+        <div class="objects">
+            <img class="object_rocket" src="/images/raketa.svg" width="40px">
+            <div class="earth-moon">
+                <img class="object_earth" src="images/zem.svg" width="100px">
+                <img class="object_moon" src="images/mesiac.svg" width="80px">
+            </div>
+            <div class="box_astronaut">
+                <img class="object_astronaut" src="images/astronaut.svg" width="140px">
+            </div>
+        </div>
+        <div class="glowing_stars">
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
 
-    h2 {
-      font-size: 2rem;
-      color: #fff;
-      text-shadow: -1px 1px 0 #000,
-                          1px 1px 0 #000,
-                         1px -1px 0 #000,
-                        -1px -1px 0 #000;
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
+        </div>
 
-    h3 {
-      font-size: 1.5rem;
-      color: #fff;
-      text-shadow: -1px 1px 0 #000,
-                          1px 1px 0 #000,
-                         1px -1px 0 #000,
-                        -1px -1px 0 #000;
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
+    </div>
 
-    p {
-      font-size: 1.5rem;
-      color: #fff;
-      font-weight: 700;
-      margin-bottom: 1rem;
-    }
-
-    a {
-      padding: 15px 20px;
-      background: #52caee;
-      font-size: 1rem;
-      text-decoration: none;
-      color: #333333;
-      border-radius: .25rem;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.808)
-    }
-  </style>
-</head>
-
-<body>
-  <div class="container">
-    <h2>Zavítali ste na neprebádané územie!</h2>
-    <h3>Stránka na ktorú ste zablúdili neexistuje!</h3>
-    <p><a href="/index.html">Vrátiť sa na domovskú stránku</a></p>
-  </div>
 </body>
 
 </html>
