@@ -20,7 +20,7 @@ nav{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding-top: 2vw;
+	padding-top: 2%;
 	padding-left: 8%;
 	padding-right: 8%;
 }
@@ -280,4 +280,19 @@ footer p:nth-child(2){
 	color:#2648dd;
 	bottom: 1.75vw;
 	font-size: 0.75vw; 
+}
+
+.mojinstagram {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #191919;
+}
+
+.instagramtitle {
+	color: white;
+	background-color: #191919;
+	font-size: 3vw;
+	text-align: center;
+	padding-bottom: 40px;
 }
