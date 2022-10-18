@@ -6,7 +6,9 @@
 }
 
 .body{
-	overflow: hidden; 
+	overflow: hidden;
+	max-width: 100vw;
+	max-height: fit-content;
 }
 
 .hero{
@@ -291,21 +293,14 @@ footer p:nth-child(2){
 }
 
 .gallery {
-	display: flex;
-	flex-direction: row;
-	overflow: visible;
 	background-color: #191919;
 	width: 100vw;
 	height: 30vw;
-	animation: slide 20s linear 0s infinite alternate;
-	position: relative;
 }
 
-@keyframes slide{
-	from {
-	  transform: translateX(0vw);
-	}
-	to {
-	  transform: translateX(-155vw);
-	}
-  }
+.gallery img {
+	width: 33vw;
+	height: 33vh;
+	object-fit:cover;
+	padding: 1px;
+}
