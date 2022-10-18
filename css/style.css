@@ -6,7 +6,7 @@
 }
 
 .body{
-	overflow: hidden;
+	overflow: hidden; 
 }
 
 .hero{
@@ -282,17 +282,30 @@ footer p:nth-child(2){
 	font-size: 0.75vw; 
 }
 
-.mojinstagram {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #191919;
-}
-
-.instagramtitle {
+.gallerytitle {
 	color: white;
 	background-color: #191919;
 	font-size: 3vw;
 	text-align: center;
-	padding-bottom: 40px;
+	padding-bottom: 2vh;
 }
+
+.gallery {
+	display: flex;
+	flex-direction: row;
+	overflow: visible;
+	background-color: #191919;
+	width: 100vw;
+	height: 30vw;
+	animation: slide 20s linear 0s infinite alternate;
+	position: relative;
+}
+
+@keyframes slide{
+	from {
+	  transform: translateX(0vw);
+	}
+	to {
+	  transform: translateX(-155vw);
+	}
+  }
