@@ -17,6 +17,15 @@ body {
 	min-width: 617px;
 }
 
+*::-webkit-scrollbar {
+	display: none;	/* skryje scrollbar pre Chrome a safari */
+}
+
+* {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
 nav{
 	display: flex;
 	align-items: center;

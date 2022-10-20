@@ -57,6 +57,15 @@ html, body{
     user-select: none; /* Standard syntax */
 }
 
+*::-webkit-scrollbar {
+	display: none;	/* skryje scrollbar pre Chrome a safari */
+}
+
+* {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
 h1{
     font-size: 15vw;
     font-weight: 500;
