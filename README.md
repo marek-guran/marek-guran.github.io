@@ -1,3 +1,3 @@
 Záverečný projekt na WD1
 
-Webstránku je možné vidieť on-line na: http://marek-guran.sk/
+Webstránku je možné vidieť on-line na: https://marek-guran.sk/
