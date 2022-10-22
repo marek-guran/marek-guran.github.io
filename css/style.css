@@ -302,7 +302,7 @@ footer p:nth-child(2){
 .gallery {
 	background-color: #191919;
 	width: 100vw;
-	height: 35vw;
+	height: 36.5vw;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -312,6 +312,6 @@ footer p:nth-child(2){
 .gallery img {
 	width: 30vw;
 	height: 35vh;
-	object-fit: cover;
+	object-fit: scale-down;
 	padding: 1px;
 }

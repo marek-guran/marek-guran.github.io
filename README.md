@@ -1,3 +1,2 @@
-Záverečný projekt na WD1
-
-Webstránku je možné vidieť on-line na: https://marek-guran.sk/
+This is my semester finals exam project for a web design class.
+Website can be seen at: https://marek-guran.sk/

@@ -17,10 +17,13 @@
   color: white;
   width: 100vw;
   height: 25vh;
+  padding-left: 8%;
+  padding-right: 8%;
+  border: none;
 }
 
 h1{
-	padding-top: 5vh;
+  padding-top: 5vh;
   color: white;
 }
 
@@ -131,10 +134,11 @@ footer p:nth-child(2){
 	display: flexbox;
 	flex-direction: column;
 	padding: 10px;
+	padding-left: 8%;
 	background-image: url(../images/ciapka.png);
 	background-repeat: no-repeat;
 	background-size: 15%;
-	background-position: 25%;
+	background-position: 33%;
 	font-size: 1vw;
 }
 
@@ -146,9 +150,10 @@ footer p:nth-child(2){
 	display: flexbox;
 	flex-direction: column;
 	padding: 10px;
+	padding-left: 8%;
 	background-image: url(../images/prace.png);
 	background-repeat: no-repeat;
-	background-position: 90%;
+	background-position: 75%;
 	background-size: 30%;
 	font-size: 1vw;
 }
@@ -161,9 +166,10 @@ footer p:nth-child(2){
 	display: flexbox;
 	flex-direction: column;
 	padding: 10px;
+	padding-left: 8%;
 	background-image: url(../images/programovanie.png);
 	background-repeat: no-repeat;
-	background-position: 20%;
+	background-position: 35%;
 	background-size: 20%;
 	font-size: 1vw;
 }
