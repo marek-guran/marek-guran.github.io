@@ -20,6 +20,7 @@
   padding-left: 4%;
   padding-right: 4%;
   border: none;
+	min-width: 570px;
 }
 
 h1{
@@ -37,6 +38,7 @@ p{
 
 .hero{
   background-color: #191919;
+	min-width: 570px;
 }
 nav{
 	display: flex;
@@ -108,6 +110,7 @@ nav > .nav-btn {
 	font-size: 55px;
     letter-spacing: 1px;
 	width: fit-content;
+	min-width: 570px;
 }
 span{
 	color: #2648dd;
