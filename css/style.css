@@ -91,6 +91,7 @@ nav > .nav-btn {
 	color: white;
 	font-size: 55px;
     letter-spacing: 1px;
+	width: fit-content;
 }
 span{
 	color: #2648dd;
@@ -131,6 +132,7 @@ nav ul li a:hover{
 	left:4%;
 	transform: translateY(-50%);
     min-width: 570px;
+	width: fit-content;
 }
 h1{
 	color: white;
