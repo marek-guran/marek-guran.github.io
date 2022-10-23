@@ -38,6 +38,7 @@ h1{
   
   .hero{
     background-color: #191919;
+    min-width: 570px;
   }
   nav{
       display: flex;
@@ -47,6 +48,7 @@ h1{
       padding-left: 4%;
       padding-right: 8%;
       position: relative;
+      min-width: 570px;
   }
   nav > .nav-btn {
     display: none;
@@ -87,6 +89,7 @@ h1{
       overflow-y: hidden;
       top: 65px;
       left: 0px;
+      min-width: 570px;
     }
     nav > .nav-links > a {
       display: block;
@@ -189,6 +192,7 @@ h1{
       padding-left: 4%;
       padding-right: 0%;
       font-size: 20px;
+      min-width: 570px;
   }
     .content h3{
         font-size: 45px;
