@@ -20,7 +20,7 @@
 
 .hero{
 	position: relative;
-	height: 30vw;
+	height: 40vh;
 	background-image: url(../images/hero.jpg);
 	background-size: cover;
 	background-position: center;
@@ -92,7 +92,6 @@ nav > .nav-btn {
   }
 
 .logo{
-	display: flex;
 	color: white;
 	font-size: 55px;
     letter-spacing: 1px;
