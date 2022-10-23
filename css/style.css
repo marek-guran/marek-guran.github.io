@@ -251,7 +251,6 @@ button:hover{
 	position: relative;
 	overflow: hidden;
 	text-align: center;
-	width: fit-content;
 }
 .card i{
 	font-size: 50px;
