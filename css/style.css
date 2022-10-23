@@ -5,11 +5,6 @@
 	box-sizing: border-box;
 }
 
-.body{
-	overflow: hidden;
-	min-width: 570px;
-}
-
 *::-webkit-scrollbar {
 	display: none;	/* skryje scrollbar pre Chrome a safari */
 }
@@ -345,16 +340,18 @@ footer p:nth-child(2){
 	background-color: #191919;
 	font-size: 60px;
 	text-align: center;
-	padding-bottom: 40px;
+	padding-bottom: 10px;
+	min-width: 570px;
 }
 
 .gallery {
 	background-color: #191919;
 	width: 100vw;
-	height: 36.5vw;
+	height: 730px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-content: center;
 	overflow: scroll;
 	min-width: 570px;
 }
