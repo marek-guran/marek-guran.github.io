@@ -14,6 +14,10 @@
     scrollbar-width: none;  /* Firefox */
 }
 
+.body{
+	min-width: 570px;
+}
+
 .hero{
 	position: relative;
 	height: 40vh;
@@ -166,6 +170,7 @@ h4{
 }
 .about-text{
 	width: auto;
+	padding-right: 4%;
 }
 .main{
 	width: 1130px;
