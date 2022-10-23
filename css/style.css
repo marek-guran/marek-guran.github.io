@@ -7,6 +7,7 @@
 
 .body{
 	overflow: hidden;
+	min-width: 570px;
 }
 
 *::-webkit-scrollbar {
@@ -160,6 +161,7 @@ h4{
 	background-color: #191919;
 	padding-left: 4%;
 	padding-right: 4%;
+	min-width: 570px;
 }
 .about img{
 	height: auto;
@@ -174,6 +176,7 @@ h4{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	min-width: 570px;
 }
 .about-text h2{
 	color: white;
@@ -217,6 +220,7 @@ button:hover{
 	background: #101010;
 	width: 100vw;
 	padding: 100px 0px;
+	min-width: 570px;
 }
 .title h2{
 	color: white;
@@ -228,7 +232,7 @@ button:hover{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 400px;
+	min-width: 570px;
 }
 .card{
 	height: 365px;
@@ -283,6 +287,7 @@ h5{
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
+	min-width: 570px;
 }
 footer{
 	position: relative;
@@ -351,6 +356,7 @@ footer p:nth-child(2){
 	flex-wrap: wrap;
 	justify-content: center;
 	overflow: scroll;
+	min-width: 570px;
 }
 
 .gallery img {
