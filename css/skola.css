@@ -197,7 +197,7 @@ footer p:nth-child(2){
 	background-image: url(../images/ciapka.png);
 	background-repeat: no-repeat;
 	background-size: 340px;
-	background-position: 550px -50px;
+	background-position: 700px -50px;
 	font-size: 20px;
     min-width: 570px;
 }
@@ -213,7 +213,7 @@ footer p:nth-child(2){
 	padding-left: 4%;
 	background-image: url(../images/prace.png);
 	background-repeat: no-repeat;
-	background-position: 900px;
+	background-position: 940px;
 	background-size: 700px;
 	font-size: 20px;
     min-width: 570px;
@@ -230,7 +230,7 @@ footer p:nth-child(2){
 	padding-left: 4%;
 	background-image: url(../images/programovanie.png);
 	background-repeat: no-repeat;
-	background-position: 550px;
+	background-position: 580px;
 	background-size: 400px;
 	font-size: 20px;
     min-width: 570px;
