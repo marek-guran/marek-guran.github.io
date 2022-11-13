@@ -294,6 +294,14 @@ h1{
       .blog-card:hover .details {
         left: 0%;
       }
+
+      .download {
+        position: relative;
+        text-align: center;
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+      
       @media (min-width: 570px) {
         .blog-card {
           flex-direction: row;
