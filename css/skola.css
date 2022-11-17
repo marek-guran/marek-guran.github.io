@@ -196,10 +196,10 @@ footer p:nth-child(2){
 	padding-left: 4%;
 	background-image: url(../images/ciapka.png);
 	background-repeat: no-repeat;
-	background-size: 340px;
+	background-size: 315px;
 	background-position: 700px -50px;
 	font-size: 20px;
-    min-width: 570px;
+  min-width: 570px;
 }
 
 .bcpraca h2{
@@ -216,7 +216,7 @@ footer p:nth-child(2){
 	background-position: 940px;
 	background-size: 700px;
 	font-size: 20px;
-    min-width: 570px;
+  min-width: 570px;
 }
 
 .ulohy h2{
@@ -233,7 +233,7 @@ footer p:nth-child(2){
 	background-position: 580px;
 	background-size: 400px;
 	font-size: 20px;
-    min-width: 570px;
+  min-width: 570px;
 }
 
 .zaverecneprojekty h2{
