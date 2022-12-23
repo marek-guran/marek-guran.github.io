@@ -117,12 +117,20 @@ nav ul li{
     display: inline-block;
     padding: 20px  20px;
 }
+
+@media only screen and (max-width: 500px) {
+	nav ul li{
+		list-style-type: none;
+		display: block!important;
+		padding: 15px  15px;
+	}	
+  }
 nav ul li a{
     color: white;
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
-    font-size: 20px;
+    font-size: 25px;
 }
 nav ul li a:hover{
     color: #2648dd;
