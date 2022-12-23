@@ -99,7 +99,7 @@ h1{
       height: 0px;
     }
     nav > #nav-check:checked ~ .nav-links {
-      height:450px;
+      height:225px;
       z-index: 10;
       overflow-y: auto;
     }
