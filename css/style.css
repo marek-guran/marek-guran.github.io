@@ -83,7 +83,8 @@ nav > .nav-btn {
       height: 0px;
     }
     nav > #nav-check:checked ~ .nav-links {
-      height:45px;
+      height:450px;
+	  z-index: 10;
       overflow-y: auto;
     }
   }
@@ -102,12 +103,22 @@ nav ul li{
 	display: inline-block;
 	padding: 15px  15px;
 }
+
+@media only screen and (max-width: 500px) {
+	nav ul li{
+		list-style-type: none;
+		display: block!important;
+		padding: 15px  15px;
+	}	
+  }
+
+
 nav ul li a{
 	color: white;
 	text-decoration: none;
 	font-weight: bold;
 	text-transform: capitalize;
-	font-size: 20px;
+	font-size: 25px;
 }
 nav ul li a:hover{
 	color: #2648dd;
@@ -357,7 +368,7 @@ footer p:nth-child(2){
 .gallery {
 	background-color: #191919;
 	width: 100%;
-	height: fit-content;
+	height: 670px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
