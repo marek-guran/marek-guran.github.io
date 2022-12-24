@@ -99,7 +99,7 @@ nav > #nav-check {
     height: 0px;
   }
   nav > #nav-check:checked ~ .nav-links {
-    height:225px;
+    height:fit-content;
     z-index: 10;
     overflow-y: auto;
   }
@@ -107,7 +107,7 @@ nav > #nav-check {
 
 .logo{
     color: white;
-    font-size: 45px;
+    font-size: 65px;
     letter-spacing: 1px;
 }
 span{
@@ -131,7 +131,7 @@ nav ul li a{
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
-    font-size: 25px;
+    font-size: 22px;
 }
 nav ul li a:hover{
     color: #2648dd;
@@ -149,7 +149,7 @@ nav ul li a:hover{
     transition: transform .4s; 
 }
 .btn:hover{
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 
 footer{
