@@ -13,6 +13,9 @@
 	font-family: 'Josefin Sans', sans-serif;
 	box-sizing: border-box;
 }
+a { 
+	text-decoration: none; 
+}
 h1{
     padding-top: 5vh;
     color: white;
@@ -46,7 +49,7 @@ h1{
       justify-content: space-between;
       padding-top: 2%;
       padding-left: 4%;
-      padding-right: 8%;
+      padding-right: 4%;
       position: relative;
       
   }
@@ -81,9 +84,9 @@ h1{
     }
     nav > .nav-links {
       position: absolute;
-      display: block;
+      display: flex;
       width: 100%;
-      background-color: #101010;
+      background-color: #1010109d;
       height: 0px;
       transition: all 0.3s ease-in;
       overflow-y: hidden;
