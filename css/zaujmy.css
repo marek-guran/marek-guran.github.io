@@ -10,8 +10,12 @@
 *{
 	padding: 0;
 	margin: 0;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'JosefinSans', sans-serif;
 	box-sizing: border-box;
+}
+@font-face {
+  font-family: JosefinSans;
+  src: url(/fonts/josefin_sans/JosefinSans.ttf);
 }
 a { 
 	text-decoration: none; 
@@ -276,9 +280,10 @@ h1{
       
       .blog-card .description {
         padding: 1rem;
-        background: #313131;
+        background: #101010;
         position: relative;
         z-index: 1;
+        border-radius: 20px;
       }
       .blog-card .description h1,
       .blog-card .description h2 

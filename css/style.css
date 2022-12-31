@@ -1,8 +1,12 @@
 *{
 	padding: 0;
 	margin: 0;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'JosefinSans', sans-serif;
 	box-sizing: border-box;
+}
+@font-face {
+  font-family: JosefinSans;
+  src: url(/fonts/josefin_sans/JosefinSans.ttf);
 }
 
 *::-webkit-scrollbar {
@@ -15,12 +19,10 @@
 }
 
 .hero{
-	position: relative;
 	height: 350px;
 	background-image: url(../images/hero.jpg);
 	background-size: cover;
 	background-position: center;
-	
 	overflow: hidden;
 }
 a { 
@@ -105,15 +107,33 @@ nav ul li{
 	display: inline-block;
 	padding: 20px  20px;
 }
+@media only screen and (max-width: 929px) {
+	.about-text{
+		text-align: center;
+		width: fit-content!important;
+	}
+  }
 
 @media only screen and (max-width: 500px) {
 	nav ul li{
 		list-style-type: none;
 		display: block!important;
 		padding: 10px  12px;
-	}	
-  }
-
+	}
+	.gallery img {
+		width: 480px!important;
+	}
+}
+@media only screen and (max-width: 400px) {
+	nav ul li{
+		list-style-type: none;
+		display: block!important;
+		padding: 10px  12px;
+	}
+	.gallery img {
+		width: 380px!important;
+	}
+}
 
 nav ul li a{
 	color: white;
@@ -170,35 +190,37 @@ h4{
 }
 
 .about{
+	position: relative;
 	display: flex;
 	overflow-wrap: break-word;
-	padding: 100px 0px;
 	background-color: #191919;
 	padding-left: 4%;
 	padding-right: 4%;
-	
+	padding-top: 40px;
+	padding-bottom: 40px;
 	overflow: hidden;
 }
 .about img{
 	height: auto;
 	width: 215px;
+	border-radius: 20px;
+	margin: 20px;
 }
 .about-text{
-	width: auto;
-	padding-right: 4%;
-	width: fit-content;
+	width: 600px;
 }
 .main{
 	width: 1130px;
 	margin: 0 auto;
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 	
 }
 .about-text h2{
 	color: white;
-	font-size: 80px;
+	font-size: 50px;
 	text-transform: capitalize;
 	margin-bottom: 20px;
 	padding-left: 3px;
@@ -386,5 +408,6 @@ footer p:nth-child(2){
 .gallery img {
 	width: 470px;
 	object-fit: scale-down;
-	padding: 1px;
+	padding: 5px;
+	border-radius: 20px;
 }

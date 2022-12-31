@@ -10,8 +10,12 @@
 *{
 	padding: 0;
 	margin: 0;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'JosefinSans', sans-serif;
 	box-sizing: border-box;
+}
+@font-face {
+  font-family: JosefinSans;
+  src: url(/fonts/josefin_sans/JosefinSans.ttf);
 }
 a { 
 	text-decoration: none; 
@@ -26,17 +30,24 @@ h1{
   }
   h3{
     color: white;
+    font-size: 50px;
   }
   h4{
     color: white;
+    font-size: 30px;
+    padding-top: 10px;
   }
 
   h5{
     color: white;
+    font-size: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
   }
 
   p{
     color: white;
+    font-size: 20px;
   }
   
   .hero{
@@ -164,7 +175,6 @@ h1{
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      
   }
   footer p:nth-child(1){
       font-size: 30px;
@@ -200,112 +210,62 @@ h1{
       transform: scale(1.3);
       transition: .3s;
   }
-
-  .content{
-      padding-left: 4%;
-      padding-right: 0%;
-      font-size: 20px;
-      
-  }
-    .content h3{
-        font-size: 45px;
-        padding-bottom: 2vh;
-    }
-    .content h4{
-        font-size: 25px;
-        padding-bottom: 0.5vh;
-        padding-top: 1vh;
-    }
-    .content h5{
-        font-size: 15px;
-        padding-bottom: 0.8vh;
-        padding-top: 0.8vh;
-    }
-    .content p{
-        font-size: 20px;
-        padding-bottom: 0.5vh;
-        padding-top: 0.5vh;
-    }
-  .praca{
-      display: flex;
-      flex-direction: column;
-      padding-top: 70px;
-  }
-  .nay{
-    background-image: url(../images/zivotopis/nay.png);
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position: 390px;
-  }
-  .alfaprint{
-    background-image: url(../images/zivotopis/Alfa_Print.png);
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position: 380px;
-  }
-  .neografia{
-    background-image: url(../images/zivotopis/neografia.png);
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position: 410px;
-  }
-  .vzdelanie{
-      display: flex;
-      flex-direction: column;
-      padding-top: 5vh;
-  }
-  .sosmt{
-    background-image: url(../images/zivotopis/sosmt.png);
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position: 370px;
-  }
-  .certifikacie{
-      display: flex;
-      flex-direction: column;
-      padding-top: 5vh;
-  }
-  .google{
-      background-image: url(../images/zivotopis/google-it-support-certificate.png);
-      background-repeat: no-repeat;
-      background-size:contain;
-      background-position: 440px;
-  }
-  .marketing{
-      background-image: url(../images/zivotopis/marketing.png);
-      background-repeat: no-repeat;
-      background-size:contain;
-      background-position: 390px;
-  }
-  .erasmus{
-      background-image: url(../images/zivotopis/erasmus.png);
-      background-repeat: no-repeat;
-      background-size:contain;
-      background-position: 670px;
-  }
-  .jazyky{
-      display: flex;
-      flex-direction: column;
-      padding-top: 5vh;
-  }
-  .znalosti{
-      display: flex;
-      flex-direction: column;
-      padding-top: 5vh;
-  }
-  .vodicsky{
-      display: flex;
-      flex-direction: column;
-      padding-top: 5vh;
-  }
-
-  .button{
+  .cert{
       background-color: #2648dd;
       color: white;
       text-decoration: none;
-      border: 0.1vw solid transparent;
       font-weight: bold;
       font-size: 20px;
-      padding: 2px 6px;
+      padding: 5px;
+      border-radius: 40px;
+    }
+
+    .box{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .card{
+      margin-left: 2%;
+      margin-right: 2%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 20px 30px;
+      background: #101010;
+      border-radius: 20px;
+      position: relative;
+      text-align: center;
+    }
+    .card i{
+      font-size: 50px;
+      display: block;
+      text-align: center;
+      margin: 25px 0px;
+      color: #2648dd;
+    }
+    .pra p{
+      color: #fcfc;
+      font-size: 16px;
+      line-height: 27px;
+    }
+    .card .button{
+      background-color:#2648dd;
+      color: white;
+      text-decoration: none;
+      border: 1px solid transparent;
+      font-weight: bold;
+      padding: 10px 22px;
       border-radius: 30px;
+      transition: .4s; 
+    }
+    .card .button:hover{
+      background-color: transparent;
+      border: 1px solid #2648dd;
+      cursor: pointer;
+    }
+
+    .logo {
+      margin: 5px;
     }
