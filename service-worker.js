@@ -20,7 +20,6 @@ const RUNTIME = 'runtime';
 // A list of local resources we always want to be cached.
 const PRECACHE_URLS = [
   'index.html',
-  './', // Alias for index.html
   '404.html',
   'projekty.html',
   'skola.html',
@@ -72,7 +71,7 @@ const PRECACHE_URLS = [
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(PRECACHE)
-      .then(cache => cache.add(PRECACHE_URLS))
+      .then(cache => cache.addAll(PRECACHE_URLS))
       .then(self.skipWaiting())
   );
 });
