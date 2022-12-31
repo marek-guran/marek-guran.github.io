@@ -265,6 +265,7 @@ h5{
 }
 .fotky img {
   padding: 10px;
+  border-radius: 20px;
 }
 
 .download {
