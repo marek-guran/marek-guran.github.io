@@ -1,7 +1,0 @@
-User-agent: *
-Disallow: /images/
-Disallow: /css/
-Disallow: /json/
-Disallow: /scripts/
-
-Sitemap: https://marek-guran.sk/sitemap_index.xml
