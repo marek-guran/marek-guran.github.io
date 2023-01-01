@@ -72,7 +72,7 @@ nav > #nav-check {
   display: none;
 }
 
-@media (max-width:1134px) {
+@media (max-width:660px) {
   nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -97,6 +97,7 @@ nav > #nav-check {
   nav > .nav-links {
     position: absolute;
     display: flex;
+		justify-content: center;
     width: 100%;
     background-color: #1010109d;
     height: 0px;
