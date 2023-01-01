@@ -33,7 +33,9 @@
 a {
 	text-decoration: none;
 }
-
+li {
+	list-style-type: none;
+  }
 nav {
 	display: flex;
 	align-items: center;
@@ -57,8 +59,8 @@ nav>#nav-check {
 	nav>.nav-btn {
 		display: inline-block;
 		position: absolute;
-		right: 0px;
-		top: 15px;
+		right: 2%;
+		top: 12px;
 	}
 
 	nav>.nav-btn>label {
@@ -88,7 +90,7 @@ nav>#nav-check {
 		background-color: #1010109d;
 		transition: all 0.3s ease-in;
 		overflow-y: hidden;
-		top: 80px;
+		top: 62px;
 		left: 0px;
 
 	}
@@ -458,6 +460,9 @@ footer p:nth-child(2) {
 @media only screen and (max-width: 400px) {
 	.gallery img {
 		width: 330px !important;
+	}
+	nav ul li a {
+		font-size: 20px;
 	}
 }
 

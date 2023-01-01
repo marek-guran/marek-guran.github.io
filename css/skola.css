@@ -25,7 +25,9 @@
 a {
   text-decoration: none;
 }
-
+li {
+  list-style-type: none;
+}
 h1 {
   color: white;
   padding-bottom: 5px;
@@ -84,60 +86,59 @@ nav>#nav-check {
 }
 
 @media (max-width:660px) {
-  nav>.nav-btn {
-    display: inline-block;
-    position: absolute;
-    right: 0px;
-    top: 15px;
-  }
+	nav>.nav-btn {
+		display: inline-block;
+		position: absolute;
+		right: 2%;
+		top: 12px;
+	}
 
-  nav>.nav-btn>label {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    padding: 13px;
-  }
+	nav>.nav-btn>label {
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+		padding: 13px;
+	}
 
-  nav>.nav-btn>label:hover,
-  .nav #nav-check:checked~.nav-btn>label {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
+	nav>.nav-btn>label:hover,
+	.nav #nav-check:checked~.nav-btn>label {
+		background-color: rgba(0, 0, 0, 0.3);
+	}
 
-  nav>.nav-btn>label>span {
-    display: block;
-    width: 25px;
-    height: 10px;
-    border-top: 2px solid #eee;
-  }
+	nav>.nav-btn>label>span {
+		display: block;
+		width: 25px;
+		height: 10px;
+		border-top: 2px solid #eee;
+	}
 
-  nav>.nav-links {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-color: #1010109d;
-    height: 0px;
-    transition: all 0.3s ease-in;
-    overflow-y: hidden;
-    top: 80px;
-    left: 0px;
+	nav>.nav-links {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		background-color: #1010109d;
+		transition: all 0.3s ease-in;
+		overflow-y: hidden;
+		top: 62px;
+		left: 0px;
 
-  }
+	}
 
-  nav>.nav-links>a {
-    display: block;
-    width: 100%;
-  }
+	nav>.nav-links>a {
+		display: block;
+		width: 100%;
+	}
 
-  nav>#nav-check:not(:checked)~.nav-links {
-    height: 0px;
-  }
+	nav>#nav-check:not(:checked)~.nav-links {
+		height: 0px;
+	}
 
-  nav>#nav-check:checked~.nav-links {
-    height: fit-content;
-    z-index: 10;
-    overflow-y: auto;
-  }
+	nav>#nav-check:checked~.nav-links {
+		height: fit-content;
+		z-index: 10;
+		overflow-y: auto;
+	}
 }
 
 .logo {
@@ -293,4 +294,9 @@ footer p:nth-child(2) {
   background-color: transparent;
   border: 1px solid #2648dd;
   cursor: pointer;
+}
+@media only screen and (max-width: 400px) {
+	nav ul li a {
+		font-size: 20px;
+	}
 }
