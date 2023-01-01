@@ -139,6 +139,7 @@ nav ul li {
 		display: block !important;
 		padding: 10px 12px;
 	}
+
 	.about-text {
 		text-align: center;
 		width: fit-content !important;
@@ -456,7 +457,7 @@ footer p:nth-child(2) {
 
 @media only screen and (max-width: 400px) {
 	.gallery img {
-		width: 330px!important;
+		width: 330px !important;
 	}
 }
 

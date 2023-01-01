@@ -4,7 +4,7 @@ const CACHE_NAME = 'Marek Guráň';
 /* Add relative URL of all the static content you want to store in
 * cache storage (this will help us use our app offline)*/
 let resourcesToCache = ["./",
-'index.html',
+  'index.html',
   '404.html',
   'projekty.html',
   'skola.html',
