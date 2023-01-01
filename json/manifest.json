@@ -16,6 +16,12 @@
             "sizes": "128x128",
             "type": "image/png",
             "purpose": "maskable any"
+        },
+        {
+            "src": "ikona3.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable any"
         }
     ],
     "display": "fullscreen",
