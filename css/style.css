@@ -125,7 +125,7 @@ nav ul li {
 	padding: 20px 20px;
 }
 
-@media only screen and (max-width: 929px) {
+@media only screen and (max-width: 929px) and (min-width: 501px) {
 	.about-text {
 		text-align: center;
 		width: fit-content !important;
@@ -137,6 +137,10 @@ nav ul li {
 		list-style-type: none;
 		display: block !important;
 		padding: 10px 12px;
+	}
+	.about-text {
+		text-align: center;
+		width: fit-content !important;
 	}
 }
 
@@ -455,7 +459,7 @@ footer p:nth-child(2) {
 	}
 }
 
-@media only screen and (max-width: 499px) {
+@media only screen and (max-width: 499px) and (min-width: 401px) {
 	.gallery img {
 		width: 400px !important;
 	}
