@@ -1,146 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,500');
-
-@-moz-keyframes rocket-movement {
-    100% {
-        -moz-transform: translate(1200px, -600px);
-    }
-}
-
-@-webkit-keyframes rocket-movement {
-    100% {
-        -webkit-transform: translate(1200px, -600px);
-    }
-}
-
-@keyframes rocket-movement {
-    100% {
-        transform: translate(1200px, -600px);
-    }
-}
-
-@-moz-keyframes spin-earth {
-    100% {
-        -moz-transform: rotate(-360deg);
-        transition: transform 20s;
-    }
-}
-
-@-webkit-keyframes spin-earth {
-    100% {
-        -webkit-transform: rotate(-360deg);
-        transition: transform 20s;
-    }
-}
-
-@keyframes spin-earth {
-    100% {
-        -webkit-transform: rotate(-360deg);
-        transform: rotate(-360deg);
-        transition: transform 20s;
-    }
-}
-
-@-moz-keyframes move-astronaut {
-    100% {
-        -moz-transform: translate(-160px, -160px);
-    }
-}
-
-@-webkit-keyframes move-astronaut {
-    100% {
-        -webkit-transform: translate(-160px, -160px);
-    }
-}
-
-@keyframes move-astronaut {
-    100% {
-        -webkit-transform: translate(-160px, -160px);
-        transform: translate(-160px, -160px);
-    }
-}
-
-@-moz-keyframes rotate-astronaut {
-    100% {
-        -moz-transform: rotate(-720deg);
-    }
-}
-
-@-webkit-keyframes rotate-astronaut {
-    100% {
-        -webkit-transform: rotate(-720deg);
-    }
-}
-
-@keyframes rotate-astronaut {
-    100% {
-        -webkit-transform: rotate(-720deg);
-        transform: rotate(-720deg);
-    }
-}
-
-@-moz-keyframes glow-star {
-    40% {
-        -moz-opacity: 0.3;
-    }
-
-    90%,
-    100% {
-        -moz-opacity: 1;
-        -moz-transform: scale(1.2);
-    }
-}
-
-@-webkit-keyframes glow-star {
-    40% {
-        -webkit-opacity: 0.3;
-    }
-
-    90%,
-    100% {
-        -webkit-opacity: 1;
-        -webkit-transform: scale(1.2);
-    }
-}
-
-@keyframes glow-star {
-    40% {
-        -webkit-opacity: 0.3;
-        opacity: 0.3;
-    }
-
-    90%,
-    100% {
-        -webkit-opacity: 1;
-        opacity: 1;
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-        border-radius: 999999px;
-    }
-}
-
-.spin-earth-on-hover {
-
-    transition: ease 200s !important;
-    transform: rotate(-3600deg) !important;
-}
-
-html,
-body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    font-family: 'Dosis', sans-serif;
-    font-weight: 300;
-    -webkit-user-select: none;
-    /* Safari 3.1+ */
-    -moz-user-select: none;
-    /* Firefox 2+ */
-    -ms-user-select: none;
-    /* IE 10+ */
-    user-select: none;
-    /* Standard syntax */
-}
-
 *::-webkit-scrollbar {
     display: none;
     /* skryje scrollbar pre Chrome a safari */
@@ -153,186 +10,156 @@ body {
     /* Firefox */
 }
 
-h1 {
-    font-size: 300px;
-    font-weight: 500;
-    margin: 0;
-    padding: 0;
-    color: #fff;
-    text-align: center;
-}
 
-h2 {
-    font-size: 40px;
-    font-weight: 500;
-    margin: 0;
-    padding: 0;
-    color: #fff;
-    text-align: center;
-}
-
-.bg-purple {
-    background-color: #443164;
-    background-repeat: repeat-x;
-    background-size: cover;
-    background-position: left top;
-
-}
-
-.btn-request {
-    padding: 10px 25px;
-    border: 1px solid #2648dd;
-    border-radius: 100px;
-    font-weight: 400;
-}
-
-.btn-request:hover {
-    background-color: #2648dd;
-    color: #fff;
-    transform: scale(1.05);
-    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
-}
-
-.btn-go-home {
-    position: relative;
-    z-index: 200;
-    margin: 15px auto;
-    width: 125px;
-    padding: 10px 15px;
-    border: 2px solid #2648dd;
-    border-radius: 100px;
-    font-weight: 400;
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    letter-spacing: 2px;
-    font-size: 35px;
-
-    -webkit-transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
-    -ms-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
-}
-
-.btn-go-home:hover {
-    background-color: #2648dd;
-    color: #fff;
-    transform: scale(1.05);
-    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
-}
-
-.central-body {
-    /*    width: 100%;*/
+body {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    padding: 10% 5% 5% 5%;
+    align-items: center;
     text-align: center;
+    background: #191919;
+    color: #2648dd;
+    font-family: 'JosefinSans', sans-serif;
+    letter-spacing: 1px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+	padding-left: 4%;
+	padding-right: 4%;
 }
 
-.objects img {
-    z-index: 90;
-    pointer-events: none;
+@font-face {
+    font-family: JosefinSans;
+    src: url(/fonts/josefin_sans/JosefinSans.ttf);
 }
 
-.object_rocket {
-    z-index: 95;
-    position: absolute;
-    transform: translateX(-50px);
-    top: 75%;
-    pointer-events: none;
-    animation: rocket-movement 200s linear infinite both running;
+.chyba {
+    font-size: 250px;
+}
+.text-nadpis {
+    font-size: 50px;
+}
+.text {
+    font-size: 30px;
+    padding-bottom: 10px;
 }
 
-.object_earth {
-    position: absolute;
-    top: 20%;
-    left: 15%;
-    z-index: 90;
-    animation: spin-earth 100s infinite linear both;
+.button {
+    background-color: #2648dd;
+    color: white;
+    text-decoration: none;
+    border: 1px solid transparent;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 40px;
+    transition: .4s;
+    font-size: 35px;
 }
 
-.object_moon {
-    position: absolute;
-    top: 12%;
-    left: 25%;
+.button:hover {
+    background-color: transparent;
+    border: 1px solid #2648dd;
+    cursor: pointer;
 }
 
-.object_astronaut {
-    animation: rotate-astronaut 200s infinite linear both alternate;
+
+div {
+    animation: glitch 1s linear infinite;
 }
 
-.box_astronaut {
-    z-index: 110 !important;
-    position: absolute;
-    top: 60%;
-    right: 20%;
-    will-change: transform;
-    animation: move-astronaut 50s infinite linear both alternate;
-}
+@keyframes glitch {
 
-.image-404 {
-    position: relative;
-    z-index: 100;
-    pointer-events: none;
-}
-
-.stars {
-    background: url(../images/hviezdy.svg);
-    background-repeat: repeat;
-    background-size: contain;
-    background-position: left top;
-}
-
-.glowing_stars .star {
-    position: absolute;
-    border-radius: 100%;
-    background-color: #fff;
-    width: 3px;
-    height: 3px;
-    opacity: 0.3;
-    will-change: opacity;
-}
-
-.glowing_stars .star:nth-child(1) {
-    top: 80%;
-    left: 25%;
-    animation: glow-star 2s infinite ease-in-out alternate 1s;
-}
-
-.glowing_stars .star:nth-child(2) {
-    top: 20%;
-    left: 40%;
-    animation: glow-star 2s infinite ease-in-out alternate 3s;
-}
-
-.glowing_stars .star:nth-child(3) {
-    top: 25%;
-    left: 25%;
-    animation: glow-star 2s infinite ease-in-out alternate 5s;
-}
-
-.glowing_stars .star:nth-child(4) {
-    top: 75%;
-    left: 80%;
-    animation: glow-star 2s infinite ease-in-out alternate 7s;
-}
-
-.glowing_stars .star:nth-child(5) {
-    top: 90%;
-    left: 50%;
-    animation: glow-star 2s infinite ease-in-out alternate 9s;
-}
-
-@media only screen and (max-width: 600px) {
-
-    .box_astronaut {
-        top: 70%;
+    2%,
+    64% {
+        transform: translate(2px, 0) skew(0deg);
     }
 
-    .central-body {
-        padding-top: 25%;
+    4%,
+    60% {
+        transform: translate(-2px, 0) skew(0deg);
+    }
+
+    62% {
+        transform: translate(0, 0) skew(5deg);
+    }
+}
+
+div:before,
+div:after {
+    content: attr(title);
+    position: absolute;
+    left: 0;
+}
+
+div:before {
+    animation: glitchTop 1s linear infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop {
+
+    2%,
+    64% {
+        transform: translate(2px, -2px);
+    }
+
+    4%,
+    60% {
+        transform: translate(-2px, 2px);
+    }
+
+    62% {
+        transform: translate(13px, -1px) skew(-13deg);
+    }
+}
+
+div:after {
+    animation: glitchBotom 1.5s linear infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom {
+
+    2%,
+    64% {
+        transform: translate(-2px, 0);
+    }
+
+    4%,
+    60% {
+        transform: translate(-2px, 0);
+    }
+
+    62% {
+        transform: translate(-22px, 5px) skew(21deg);
+    }
+}
+
+@media only screen and (max-width: 449px) {
+    .chyba {
+        font-size: 125px!important;
+    }
+    .text-nadpis {
+        font-size: 35px!important;
+    }
+    .text {
+        font-size: 15px!important;
+    }
+    .button {
+        font-size: 25px!important;
+    }
+}
+@media only screen and (max-width: 800px) and (min-width: 450px) {
+    .chyba {
+        font-size: 175px!important;
+    }
+    .text-nadpis {
+        font-size: 45px!important;
+    }
+    .text {
+        font-size: 25px!important;
+    }
+    .button {
+        font-size: 30px!important;
     }
 }
