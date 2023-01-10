@@ -25,5 +25,22 @@
         }
     ],
     "display": "fullscreen",
-    "orientation": "any"
+    "orientation": "any",
+
+    "screenshots" : [
+        {
+          "src": "pc_ukazka.png",
+          "sizes": "1920x1080",
+          "type": "image/png",
+          "platform": "wide",
+          "label": "Domovská stránka na veľkých obrazovkách"
+        },
+        {
+          "src": "mobilna_ukazka.png",
+          "sizes": "1080x2400",
+          "type": "image/png",
+          "platform": "narrow",
+          "label": "Domovská stránka na malých obrazovkách"
+        }
+      ]
 }
