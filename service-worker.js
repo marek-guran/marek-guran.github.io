@@ -4,12 +4,12 @@ const CACHE_NAME = 'Marek Guráň';
 /* Add relative URL of all the static content you want to store in
 * cache storage (this will help us use our app offline)*/
 let resourcesToCache = [
-  '/fonts/josefin_sans/JosefinSans.ttf',
   '/fonts/fontawesome-free-6.2.1-web/css/all.css',
   '/fonts/fontawesome-free-6.2.1-web/webfonts/fa-brands-400.ttf',
   '/fonts/fontawesome-free-6.2.1-web/webfonts/fa-regular-400.ttf',
   '/fonts/fontawesome-free-6.2.1-web/webfonts/fa-solid-900.ttf',
-  '/fonts/fontawesome-free-6.2.1-web/webfonts/fa-v4compatibility.ttf'];
+  '/fonts/fontawesome-free-6.2.1-web/webfonts/fa-v4compatibility.ttf',
+  '/fonts/pt_sans/PTSans-Regular.ttf'];
 
 self.addEventListener("install", e => {
   e.waitUntil(

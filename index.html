@@ -3,18 +3,18 @@
 <html lang="sk">
 
 <head>
-	<title>Domov - Marek Guráň</title>
 	<meta name="description"
-		content="Webstránka slúži primárne ako záverečný projekt pre predmet webový dizajn. Autor webu: Marek Guráň">
-	<meta charset="utf-8" />
+		content="životopis a zároveň portfólio Mareka Guráňa.">
+	<title>Marek Guráň</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme-color" content="#191919" />
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/cv.css">
 	<link rel="icon" type="image/x-icon" href="/favicon.ico">
 	<link rel="apple-touch-icon" href="/json/ikona4.jpg">
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/home.js"></script>
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="/fonts/josefin_sans/JosefinSans.ttf">
 
 	<link rel="stylesheet" href="/fonts/fontawesome-free-6.2.1-web/css/all.css">
 	<link rel="manifest" href="/json/manifest.json">
@@ -29,113 +29,383 @@
 </head>
 
 <body>
-	<div class="hero">
-		<nav>
-			<li>
-				<a href="/index.html">
-					<h2 class="logo">M<span>G</span></h2>
-				</a>
-			</li>
-			<input type="checkbox" id="nav-check">
-			<ul class="nav-links">
-				<li><a href="/skola.html">Škola</a></li>
-				<li><a href="/zaujmy.html">Záujmy</a></li>
-				<li><a href="/zivotopis.html">Životopis</a></li>
-				<li><a href="/projekty.html">Projekty</a></li>
-			</ul>
-			<div class="nav-btn">
-				<label for="nav-check">
-					<span></span>
-					<span></span>
-					<span></span>
-				</label>
-			</div>
-		</nav>
-
+	<section class="hero">
 		<div class="content">
-			<h4>Ahoj, moje meno je</h4>
-			<h1>Marek <span>Guráň</span></h1>
-			<h3>Som študentom vysokej školy.</h3>
+		  <div class="header">
+			<h1>Marek Guráň</h1>
+		  </div>
 		</div>
-	</div>
-	<section class="about">
-		<div class="main">
-			<img src="/images/MG.jpg" alt="MG fotka" loading="lazy">
-			<div class="about-text">
-				<h2>O mne</h2>
-				<h5>Študent <span>VŠ</span></h5>
-				<p>Som študentom vysokej školy, na ktorej študujem jedno odborovú informatiku. Dosť sa zaujímam o
-					technológie a hardvér. Mám vyštudovanú strednú odbornú školu v odbore operátor ofsetových tlačových
-					strojov.
+	  </section>
+	  <section class="about-myself">
+		<div class="content">
+		  <h2>Ahoj!</h2>
+		  <p>Moje meno je <span>Marek Guráň</span>... Som <span>študentom</span> vysokej školy, na ktorej študujem jedno odborovú <span>informatiku.</span> Dosť sa zaujímam o technológie a hardvér. Mám vyštudovanú strednú odbornú školu v odbore operátor ofsetových tlačových strojov. Nedávno som sa začal zaujímať o natívny development Android aplikácií v <span>Kotline</span> v ktorom som už naprogramoval pár aplikácií a jednu veľmi jednoduchú hru.</p>
+		</div>
+	  </section>
+	  <section class="experience">
+		<div class="content">
+		  <h1>Pracovné Skúsenosti</h1>
+		  <ul>
+			<li>
+			  <div class="experience-content hidden">
+				<h2>NAY a.s. - Manipulant s tovarom</h2>
+				<div class="experience-time">November 2021 - December 2021</div>
+				<p>
+					Naskladňovanie tovaru
+					<br>Vykladanie a vystavovanie tovaru na predajnú plochu
+          			<br>Pomoc zákazníkom pri výbere a naloženia tovaru do auta
 				</p>
+			  </div>
+			</li>
+			<li>
+			  <div class="experience-content hidden">
+				<h2>Alfa print, s.r.o. - Odborný výcvik</h2>
+				<div class="experience-time">Január 2017 - Január 2019</div>
+				<p>
+					Práca na tlačiarni
+          			<br>Výpomoc pri offsetových tlačiarenských strojoch
+          			<br>Čistenie stroja pred ďalšou tlačou
+          			<br>Výmena offsetových tlačových platní
+          			<br>Kontrola farebnosti tlače
+          			<br>Miešanie vlhčiaceho roztoku
+				</p>
+			  </div>
+			</li>
+			<li>
+			  <div class="experience-content hidden">
+				<h2>NEOGRAFIA, a.s - Odborný výcvik</h2>
+				<div class="experience-time">Január 2016 - Január 2017</div>
+				<p>
+					Práca na tlačiarni
+          			<br>Výpomoc pri offsetových tlačiarenských strojoch
+          			<br>Čistenie stroja pred ďalšou tlačou
+          			<br>Výmena offsetových tlačových platní
+          			<br>Kontrola farebnosti tlače
+				</p>
+			  </div>
+			</li>
+		  </ul>
+		</div>
+	  </section>
+	  <section class="skills">
+		<div class="content">
+		  <div class="development-wrapper">
+			<h2 class="development-title">Znalosti</h2>
+			<ul class="skills-bar-container">
+			  <li>
+				<div class="progressbar-title">
+				  <h3>Windows</h3>
+				  <span class="percent"></span>
+				</div>
+				<div class="bar-container" data-percent="75">
+				  <span class="progressbar"></span>
+				</div>
+			  </li>
+			  <li>
+				<div class="progressbar-title">
+				  <h3>Linux</h3>
+				  <span class="percent"></span>
+				</div>
+				<div class="bar-container" data-percent="55">
+				  <span class="progressbar"></span>
+				</div>
+			  </li>
+			  <li>
+				<div class="progressbar-title">
+				  <h3>Technická podpora</h3>
+				  <span class="percent"></span>
+				</div>
+				<div class="bar-container" data-percent="70">
+				  <span class="progressbar"></span>
+				</div>
+			  </li>
+			  <li>
+				<div class="progressbar-title">
+				  <h3>Hardvérová podpora</h3>
+				  <span class="percent"></span>
+				</div>
+				<div class="bar-container" data-percent="80">
+				  <span class="progressbar"></span>
+				</div>
+			  </li>
+			  <li>
+				<div class="progressbar-title">
+				  <h3>IT Operácie</h3>
+				  <span class="percent"></span>
+				</div>
+				<div class="bar-container" data-percent="45">
+				  <span class="progressbar"></span>
+				</div>
+			  </li>
+			  <li>
+				<div class="progressbar-title">
+				  <h3>Bezpečnostná Politika</h3>
+				  <span class="percent"></span>
+				</div>
+				<div class="bar-container" data-percent="60">
+				  <span class="progressbar"></span>
+				</div>
+			  </li>
+			  <li>
+				<div class="progressbar-title">
+				  <h3>Active Directory (Windows)</h3>
+				  <span class="percent"></span>
+				</div>
+				<div class="bar-container" data-percent="25">
+				  <span class="progressbar"></span>
+				</div>
+			  </li>
+			  <li>
+				<div class="progressbar-title">
+				  <h3>Hyper-V</h3>
+				  <span class="percent"></span>
+				</div>
+				<div class="bar-container" data-percent="65">
+				  <span class="progressbar"></span>
+				</div>
+			  </li>
+			  <li>
+				<div class="progressbar-title">
+				  <h3>Python</h3>
+				  <span class="percent"></span>
+				</div>
+				<div class="bar-container" data-percent="60">
+				  <span class="progressbar"></span>
+				</div>
+			  </li>
+			  <li>
+				<div class="progressbar-title">
+				  <h3>Kotlin</h3>
+				  <span class="percent"></span>
+				</div>
+				<div class="bar-container" data-percent="20">
+				  <span class="progressbar"></span>
+				</div>
+			  </li>
+			  <li>
+				<div class="progressbar-title">
+				  <h3>Java</h3>
+				  <span class="percent"></span>
+				</div>
+				<div class="bar-container" data-percent="20">
+				  <span class="progressbar"></span>
+				</div>
+			  </li>
+			  <li>
+				<div class="progressbar-title">
+				  <h3>Javascript</h3>
+				  <span class="percent"></span>
+				</div>
+				<div class="bar-container" data-percent="10">
+				  <span class="progressbar"></span>
+				</div>
+			  </li>
+			  <li>
+				<div class="progressbar-title">
+				  <h3>HTML</h3>
+				  <span class="percent"></span>
+				</div>
+				<div class="bar-container" data-percent="65">
+				  <span class="progressbar"></span>
+				</div>
+			  </li>
+			  <li>
+				<div class="progressbar-title">
+				  <h3>CSS</h3>
+				  <span class="percent"></span>
+				</div>
+				<div class="bar-container" data-percent="65">
+				  <span class="progressbar"></span>
+				</div>
+			  </li>
+			  <li>
+				<div class="progressbar-title">
+				  <h3>Microsoft Office 365</h3>
+				  <span class="percent"></span>
+				</div>
+				<div class="bar-container" data-percent="75">
+				  <span class="progressbar"></span>
+				</div>
+			  </li>
+			</ul>
+		  </div>
+		  <div class="tools-knowledge-wrapper">
+			<div class="tools-wrapper">
+			  <h2 class="title">Programy, ktoré používam</h2>
+			  <ul class="tools">
+				<li>
+				  <i class="fab fa-android" aria-hidden="true"></i>
+				  Android Studio
+				</li>
+				<li>
+				  <i class="fa fa-code" aria-hidden="true"></i>
+				  Visual Studio Code
+				</li>
+				<li>
+				  <i class="fa fa-file-word" aria-hidden="true"></i>
+				  Microsoft Word
+				</li>
+				<li>
+					<i class="fa fa-file-powerpoint" aria-hidden="true"></i>
+					Microsoft Powerpoint
+				</li>
+			  </ul>
 			</div>
+			<div class="knowledge-wrapper">
+			  <h2 class="title">Certifikácie</h2>
+			  <ul class="knowledge">
+				<li>
+				  <i class="fab fa-google-play" aria-hidden="true"></i>
+				  <a href="https://www.credential.net/ab9af4a6-d9e3-43cc-a3b4-f3526e250a07"
+				  target="_blank">Google Play Store Listing Certificate - Január 2023/2025</a>
+				</li>
+				<li>
+					<i class="fa fa-computer" aria-hidden="true"></i>
+					<a href="https://www.coursera.org/account/accomplishments/professional-cert/534UXK2JHUEK"
+					target="_blank">IT Support Specialization Certificate - Október 2021</a>
+				</li>
+				<li>
+					<i class="fa fa-ad" aria-hidden="true"></i>
+					<a href="https://learndigital.withgoogle.com/digitalnagaraz/validate-certificate-code"
+					target="_blank">Základy Digitálneho Marketingu - Október 2021 (B4U M5D Y5J)</a>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+		  <div class="clear"></div>
 		</div>
-	</section>
+		<div class="clear"></div>
+	  </section>
 
-	<div class="gallerytitle">
-		<h2>Môj Výber Fotiek</h2>
-	</div>
-	<div class="gallery">
-		<img src="/images/gallery/stuzkova.jpg" alt="stuzkova" loading="lazy">
-		<img src="/images/gallery/praxmaturita2.JPG" alt="praxmaturita" loading="lazy">
-		<img src="/images/gallery/praxmaturita1.JPG" alt="praxmaturita" loading="lazy">
-		<img src="/images/gallery/pond.jpg" alt="pond" loading="lazy">
-		<img src="/images/gallery/sunset.jpg" alt="sunset" loading="lazy">
-		<img src="/images/gallery/waterdrops.jpg" alt="waterdrops" loading="lazy">
-	</div>
-	<div class="service">
-		<div class="title">
-			<h2>Moje Karty</h2>
-		</div>
-
-		<div class="box">
-			<div class="card">
-				<i class="fab fa-github"></i>
-				<h5>Github</h5>
-				<div class="pra">
-					<p>Otvorte si môj GitHub profil.</p>
-
-					<p style="text-align: center;">
-						<a class="button" href="https://github.com/marek-guran" target="_blank">GitHub</a>
-					</p>
+	  <section class="portfolio">
+		<div class="content">
+		  
+		  <h1>Moje Projekty</h1>
+		  
+		  <div class="projects">
+			
+			<div class="project">
+			  <div class="project-image">
+				<img src="images/rozvrh.png" alt="Android Aplikácia Rozvrh"/>
+			  </div>
+			  <div class="project-title">
+				<h2>Android Aplikácia Rozvrh Hodín</h2>
+			  </div>
+			  <div class="project-description">
+				<p>Môj rozvrh hodín ako mobilná aplikácia. Aplikácia vznikla preto,
+					lebo bola zrušená aplikácia AiS2 a nevedel som nájsť alternatívu.
+					Aplikácia taktiež podporuje Material You.</p>
+			  </div>
+			</div>
+			<div class="project">
+			  <div class="project-image">
+				<img src="images/tzi.png" alt="Android Aplikácia TZI"/>
+			  </div>
+			  <div class="project-title">
+				<h2>Android Aplikácia TZI Príklady</h2>
+			  </div>
+			  <div class="project-description">
+				<p>Jednoduchá aplikácia na tému kvízy.
+					Aplikácia vznikla za účelom učiť sa a skúšať sa
+					jednoduchším spôsobom ako listovať v skriptách z
+					predmetu Teoretické Základy Informatiky.
+				Aplikácia je k dispozícii na stiahnutie na Google Play Obchode.</p>
+				<center>
+				<a href="https://play.google.com/store/apps/details?id=com.marekguran.tzi&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+						target="_blank">
+						<img alt="Teraz na Google Play"
+							src="https://play.google.com/intl/en_us/badges/static/images/badges/sk_badge_web_generic.png"
+							width="200px" />
+					</a>
+				</center>
+			  </div>
+			</div>
+			<div class="project">
+			  <div class="project-image">
+				<img src="images/piskvorky.png" alt="Android Hra Piškvorky"/>
+			  </div>
+			  <div class="project-title">
+				<h2>Android Hra Material You Piškvorky</h2>
+			  </div>
+			  <div class="project-description">
+				<p>Jednoduchá hra na tému piškvorky.
+					Hra je založená čisto na Material You dizajne.
+					Je k dispozícii iba pre zariadenia s Android verziou 12+.</p>
+					<center>
+						<a href="https://play.google.com/store/apps/details?id=com.marekguran.tictactoe&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+						target="_blank">
+						<img alt="Teraz na Google Play"
+							src="https://play.google.com/intl/en_us/badges/static/images/badges/sk_badge_web_generic.png"
+							width="200px" />
+					</a>
+						</center>
+			  </div>
+			</div>
+			<div class="project">
+				<div class="project-image">
+				  <img src="images/zivotopis.png" alt="Android Aplikácia Zivotopis"/>
+				</div>
+				<div class="project-title">
+				  <h2>Android Aplikácia Môj Životopis</h2>
+				</div>
+				<div class="project-description">
+				  <p>Môj životopis ako Android Aplácia.</p>
 				</div>
 			</div>
-
-			<div class="card">
-				<i class="fab fa-google-play"></i>
-				<h5>Google Play</h5>
-				<div class="pra">
-					<p>Môj profil Google Play vývojára.
-					</p>
-
-					<p style="text-align: center;">
-						<a class="button" href="https://play.google.com/store/apps/dev?id=7516657504856149508"
-							target="_blank">Pozrieť</a>
-					</p>
+			<div class="project">
+				<div class="project-image">
+				  <img src="images/lineage.png" alt="LineageOs"/>
 				</div>
-			</div>
-
-			<div class="card">
-				<i class='fa fa-envelope'></i>
-				<h5>E-mail</h5>
-				<div class="pra">
-					<p>Napíšte mi e-mail.</p>
-					<p style="text-align: center;">
-						<a class="button" href="mailto:guran.marek1999@gmail.com">Napísať</a>
-					</p>
+				<div class="project-title">
+				  <h2>LineageOs</h2>
 				</div>
-			</div>
+				<div class="project-description">
+				  <p>Môj zatiaľ najväčší projekt... Vytvoril som operačný systém z distribúcie LineageOs.
+					Tento operačný systém je založený na verzii Androidu 11 a je pre Xiaomi Mi A2 a
+					je v základnej zostave bez Google služieb (Google Play Obchod a ďalšie).
+					Je to úplne čistý Android s najzákladnejšími aplikáciami. Avšak, ktokoľvek si môže doinštalovať
+					tieto aplikácie. Hneď dole je vidieť aj koľko ľudí si stiahlo túto moju verziu OS pre tento mobil.</p>
+					<center>
+						<a href="https://sourceforge.net/projects/lineageos-jasmine-sprout/files/latest/download"
+							target="_blank"><img alt="Download LineageOS (jasmine_sprout)"
+								src="https://img.shields.io/sourceforge/dt/lineageos-jasmine-sprout.svg"
+								style="width: 130px"></a>
+					</center>
+				</div>
+			  </div>
+		  </div>
 		</div>
-	</div>
-
-	<footer>
-		<p>Marek Guráň</p>
-		<p>Moje ďalšie sociálne kontakty:</p>
-		<div class="social">
-			<a href="https://www.facebook.com/marek.guran" target="_blank"><i class="fab fa-facebook-f"></i></a>
-			<a href="https://www.instagram.com/marek_guran/" target="_blank"><i class="fab fa-instagram"></i></a>
+	  </section>
+	  <section class="contact">
+		<div class="content">
+		  <ul class="socials">
+			<li class="social">
+			  <a href="mailto:guran.marek1999@gmail.com" target="_blank" class="email">
+				<i class="fa fa-envelope" aria-hidden="true"></i>
+			  </a>
+			</li>
+			<li class="social">
+			  <a href="https://www.linkedin.com/in/marek-guran/" target="_blank" class="linkedin">
+				<i class="fab fa-linkedin" aria-hidden="true"></i>
+			  </a>
+			</li>
+			<li class="social">
+			  <a href="https://github.com/marek-guran" target="_blank" class="github">
+				<i class="fab fa-github" aria-hidden="true"></i>
+			  </a>
+			</li>
+			<li class="social">
+				<a href="https://www.facebook.com/marek.guran" target="_blank" class="facebook">
+				  <i class="fab fa-facebook" aria-hidden="true"></i>
+				</a>
+			  </li>
+		  </ul>
+		  <div class="clear"></div>
 		</div>
-	</footer>
+	  </section>
+	  <footer class="footer">
+		<p id="copyright"></p>
+	  </footer>
 </body>
 
 </html>
