@@ -49,6 +49,9 @@ section {
   cursor: pointer;
   z-index: 999;
 }
+.back-to-top:hover{
+  opacity: 0.5;
+}
 .dark-mode{
   position: absolute;
     right: 10px;
