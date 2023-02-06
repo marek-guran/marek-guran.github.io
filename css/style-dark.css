@@ -46,6 +46,7 @@ section {
   font-size: 2em;
   padding: 10px 15px;
   border-radius: 50%;
+  border: none;
   cursor: pointer;
   z-index: 999;
 }
