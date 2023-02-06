@@ -47,6 +47,10 @@ section {
     visibility: visible;
     background-color: transparent;
 }
+.dark-mode:hover{
+  cursor: pointer;
+  opacity: 0.5;
+}
 .light-mode{
   position: absolute;
     right: 10px;
@@ -57,6 +61,10 @@ section {
     border: none;
     visibility: hidden;
     background-color: transparent;
+}
+.light-mode:hover{
+  cursor: pointer;
+  opacity: 0.5;
 }
 .hero {
   height: 100%;
