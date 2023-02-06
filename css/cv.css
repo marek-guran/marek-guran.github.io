@@ -113,6 +113,7 @@ section {
 }
 .experience .content ul li:last-child {
   padding-bottom: 7px;
+  border-radius: 20px;
 }
 .experience .content ul li:before {
   content: '';
