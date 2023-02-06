@@ -125,6 +125,7 @@ section {
   width: 20px;
   height: 20px;
   border: 4px solid #f9f9f9;
+  border-radius: 100%;
 }
 .experience .content ul li .hidden {
   opacity: 0;
@@ -138,9 +139,9 @@ section {
   width: calc(100vw - 100px);
   padding: 20px;
   text-align: center;
-  -webkit-border-radius: 0 5px 5px;
-  -moz-border-radius: 0 5px 5px;
-  border-radius: 0 5px 5px;
+  -webkit-border-radius: 0 20px 20px;
+  -moz-border-radius: 0 20px 20px;
+  border-radius: 0 20px 20px;
 }
 .experience .content ul li .experience-content h2 {
   font-size: 1.5em;
@@ -194,18 +195,21 @@ section {
   position: absolute;
   right: 20px;
   font-size: 1.1em;
+  visibility: hidden;
 }
 .skills .content .development-wrapper .skills-bar-container li .bar-container {
   background: #ececec;
   position: relative;
   width: 100%;
   height: 10px;
+  border-radius: 20px;
 }
 .skills .content .development-wrapper .skills-bar-container li .bar-container .progressbar {
   background: #34495e;
   position: absolute;
   width: 0%;
   height: 100%;
+  border-radius: 20px;
 }
 .skills .content .tools-knowledge-wrapper {
   width: 100%;
@@ -419,9 +423,9 @@ section {
   }
   .experience .content ul li:nth-child(even) .experience-content {
     left: calc(-40vw - 57px);
-    -webkit-border-radius: 5px 0px 5px 5px;
-    -moz-border-radius: 5px 0px 5px 5px;
-    border-radius: 5px 0px 5px 5px;
+    -webkit-border-radius: 20px 0px 20px 20px;
+    -moz-border-radius: 20px 0px 20px 20px;
+    border-radius: 20px 0px 20px 20px;
   }
   .experience .content ul li:nth-child(even) .experience-content:before {
     left: auto;
