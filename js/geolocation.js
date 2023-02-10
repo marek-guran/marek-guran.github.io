@@ -17,8 +17,5 @@ fetch("https://ipapi.co/json/")
 
       // Set the redirected flag to true to avoid infinite loop
       redirected = true;
-
-      // Stop the page from reloading
-      window.stop();
     }
   });
