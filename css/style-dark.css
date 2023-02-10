@@ -53,6 +53,17 @@ section {
 .back-to-top:hover{
   opacity: 0.5;
 }
+.language{
+  position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 999;
+    font-size: 2em;
+    color: #f9f9f9;
+    border: none;
+    visibility: visible;
+    background-color: transparent;
+}
 .dark-mode{
   position: absolute;
     right: 10px;
