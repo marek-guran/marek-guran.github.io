@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+
+<html lang="sk">
+
+<head>
+	<meta name="description"
+		content="Marek Guráň's resume and porfolio. Website created by: Marek Guráň">
+	<title>Marek Guráň</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#191919" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style-dark.css">
+	<link rel="icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="apple-touch-icon" href="/json/ikona4.jpg">
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/home.js"></script>
+	<script src="js/light-dark-switch.js"></script>
+	<script src="js/scroll-to-top.js"></script>
+	<script src="js/geolocation.js"></script>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+
+	<link rel="stylesheet" href="/fonts/fontawesome-free-6.2.1-web/css/all.css">
+	<link rel="manifest" href="/json/manifest.json">
+
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('service-worker.js');
+		} else {
+			console.log("Service worker is not supported");
+		}
+	</script>
+</head>
+
+<body>
+	<button class="back-to-top" id="back-to-top">
+		<i class="fa fa-arrow-up" aria-hidden="true"></i>
+	</button>
+	<button class="dark-mode" id="dark-mode">
+		<i class="fa fa-moon" aria-hidden="true"></i>
+	</button>
+	<button class="light-mode" id="light-mode">
+		<i class="fa fa-sun" aria-hidden="true"></i>
+	</button>
+	<section class="hero">
+		<div class="content">
+		  <div class="header">
+			<h1>Marek Guráň</h1>
+		  </div>
+		</div>
+	  </section>
+	  <section class="about-myself">
+		<div class="content">
+		  <h2>Hello!</h2>
+		  <p>My name is <span>Marek Guráň</span>... I am university <span>student</span>, and I am studying teacher of <span>computer science</span>. I am interested in technology and hardware and I have graduated secondary vocational school in the field of offset printing operator. I have recently became interested in native Android apps development by using <span>Kotlin</span>. I have already programmed a few apps and one very simple game in it.</p>
+		</div>
+	  </section>
+	  <section class="experience">
+		<div class="content">
+		  <h1>Work Experience</h1>
+		  <ul>
+			<li>
+			  <div class="experience-content hidden">
+				<h2>NAY a.s. - Manipulator with goods</h2>
+				<div class="experience-time">November 2021 - December 2021</div>
+				<p>
+					Warehousing of goods
+					<br>Unloading and displaying goods in the sales area
+          			<br>Helping customers with selection based on their
+					  requirements					  
+				</p>
+			  </div>
+			</li>
+			<li>
+			  <div class="experience-content hidden">
+				<h2>Alfa print, s.r.o. - Vocational training</h2>
+				<div class="experience-time">January 2017 - January 2019</div>
+				<p>
+					Working as a printer operator
+          			<br>Helping with offset printing machines
+          			<br>Cleaning the machine before the next print
+          			<br>Replacement of offset printing plates
+          			<br>Print color control
+          			<br>Mixing the wetting solution
+				</p>
+			  </div>
+			</li>
+			<li>
+			  <div class="experience-content hidden">
+				<h2>NEOGRAFIA, a.s - Vocational training</h2>
+				<div class="experience-time">January 2016 - January 2017</div>
+				<p>
+					Working as a printer operator
+          			<br>Helping with offset printing machines
+          			<br>Cleaning the machine before the next print
+          			<br>Replacement of offset printing plates
+          			<br>Print color control
+				</p>
+			  </div>
+			</li>
+		  </ul>
+		</div>
+	  </section>
+	  <section class="skills">
+		<div class="content">
+		  <div class="development-wrapper">
+			<h2 class="development-title">Skills</h2>
+			<ul class="skills-bar-container">
+			  <li>
+				<div class="progressbar-title">
+				  <h3>Windows</h3>
+				  <span class="percent"></span>
+				</div>
+				<div class="bar-container" data-percent="75">
+				  <span class="progressbar"></span>
+				</div>
+			  </li>
+			  <li>
+				<div class="progressbar-title">
+				  <h3>Linux</h3>
+				  <span class="percent"></span>
+				</div>
+				<div class="bar-container" data-percent="55">
+				  <span class="progressbar"></span>
+				</div>
+			  </li>
+			  <li>
+				<div class="progressbar-title">
+				  <h3>Technical support</h3>
+				  <span class="percent"></span>
+				</div>
+				<div class="bar-container" data-percent="70">
+				  <span class="progressbar"></span>
+				</div>
+			  </li>
+			  <li>
+				<div class="progressbar-title">
+				  <h3>Hardware support</h3>
+				  <span class="percent"></span>
+				</div>
+				<div class="bar-container" data-percent="80">
+				  <span class="progressbar"></span>
+				</div>
+			  </li>
+			  <li>
+				<div class="progressbar-title">
+				  <h3>IT Operations</h3>
+				  <span class="percent"></span>
+				</div>
+				<div class="bar-container" data-percent="45">
+				  <span class="progressbar"></span>
+				</div>
+			  </li>
+			  <li>
+				<div class="progressbar-title">
+				  <h3>Security Policy</h3>
+				  <span class="percent"></span>
+				</div>
+				<div class="bar-container" data-percent="60">
+				  <span class="progressbar"></span>
+				</div>
+			  </li>
+			  <li>
+				<div class="progressbar-title">
+				  <h3>Active Directory (Windows)</h3>
+				  <span class="percent"></span>
+				</div>
+				<div class="bar-container" data-percent="25">
+				  <span class="progressbar"></span>
+				</div>
+			  </li>
+			  <li>
+				<div class="progressbar-title">
+				  <h3>Hyper-V</h3>
+				  <span class="percent"></span>
+				</div>
+				<div class="bar-container" data-percent="65">
+				  <span class="progressbar"></span>
+				</div>
+			  </li>
+			  <li>
+				<div class="progressbar-title">
+				  <h3>Python</h3>
+				  <span class="percent"></span>
+				</div>
+				<div class="bar-container" data-percent="60">
+				  <span class="progressbar"></span>
+				</div>
+			  </li>
+			  <li>
+				<div class="progressbar-title">
+				  <h3>Kotlin</h3>
+				  <span class="percent"></span>
+				</div>
+				<div class="bar-container" data-percent="20">
+				  <span class="progressbar"></span>
+				</div>
+			  </li>
+			  <li>
+				<div class="progressbar-title">
+				  <h3>Java</h3>
+				  <span class="percent"></span>
+				</div>
+				<div class="bar-container" data-percent="20">
+				  <span class="progressbar"></span>
+				</div>
+			  </li>
+			  <li>
+				<div class="progressbar-title">
+				  <h3>Javascript</h3>
+				  <span class="percent"></span>
+				</div>
+				<div class="bar-container" data-percent="10">
+				  <span class="progressbar"></span>
+				</div>
+			  </li>
+			  <li>
+				<div class="progressbar-title">
+				  <h3>HTML</h3>
+				  <span class="percent"></span>
+				</div>
+				<div class="bar-container" data-percent="65">
+				  <span class="progressbar"></span>
+				</div>
+			  </li>
+			  <li>
+				<div class="progressbar-title">
+				  <h3>CSS</h3>
+				  <span class="percent"></span>
+				</div>
+				<div class="bar-container" data-percent="65">
+				  <span class="progressbar"></span>
+				</div>
+			  </li>
+			  <li>
+				<div class="progressbar-title">
+				  <h3>Microsoft Office 365</h3>
+				  <span class="percent"></span>
+				</div>
+				<div class="bar-container" data-percent="75">
+				  <span class="progressbar"></span>
+				</div>
+			  </li>
+			</ul>
+		  </div>
+		  <div class="tools-knowledge-wrapper">
+			<div class="tools-wrapper">
+			  <h2 class="title">Programs that I am using</h2>
+			  <ul class="tools">
+				<li>
+				  <i class="fab fa-android" aria-hidden="true"></i>
+				  Android Studio
+				</li>
+				<li>
+				  <i class="fa fa-code" aria-hidden="true"></i>
+				  Visual Studio Code
+				</li>
+				<li>
+				  <i class="fa fa-file-word" aria-hidden="true"></i>
+				  Microsoft Word
+				</li>
+				<li>
+					<i class="fa fa-file-powerpoint" aria-hidden="true"></i>
+					Microsoft Powerpoint
+				</li>
+			  </ul>
+			</div>
+			<div class="knowledge-wrapper">
+			  <h2 class="title">Certifications</h2>
+			  <ul class="knowledge">
+				<li>
+				  <i class="fab fa-google-play" aria-hidden="true"></i>
+				  <a href="https://www.credential.net/ab9af4a6-d9e3-43cc-a3b4-f3526e250a07"
+				  target="_blank">Google Play Store Listing Certificate - January 2023/2025</a>
+				</li>
+				<li>
+					<i class="fa fa-computer" aria-hidden="true"></i>
+					<a href="https://www.coursera.org/account/accomplishments/professional-cert/534UXK2JHUEK"
+					target="_blank">IT Support Specialization Certificate - October 2021</a>
+				</li>
+				<li>
+					<i class="fa fa-ad" aria-hidden="true"></i>
+					<a href="https://learndigital.withgoogle.com/digitalnagaraz/validate-certificate-code"
+					target="_blank">Basics of Digital Marketing - October 2021 (B4U M5D Y5J)</a>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+		  <div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+	  </section>
+
+	  <section class="portfolio">
+		<div class="content">
+		  
+		  <h1>My Projects</h1>
+		  
+		  <div class="projects">
+			
+			<div class="project">
+			  <div class="project-image">
+				<img src="images/rozvrh.png" alt="Android Aplikácia Rozvrh"/>
+			  </div>
+			  <div class="project-title">
+				<h2>Android app Timetable</h2>
+			  </div>
+			  <div class="project-description">
+				<p>My timetable as a mobile application. The application was created because
+					the school app (AiS2) was canceled and I could not find any alternative, that would suit my needs.
+					The app also supports Material You.</p>
+			  </div>
+			</div>
+			<div class="project">
+			  <div class="project-image">
+				<img src="images/tzi.png" alt="Android Aplikácia TZI"/>
+			  </div>
+			  <div class="project-title">
+				<h2>Android app TZI Príklady</h2>
+			  </div>
+			  <div class="project-description">
+				<p>A simple application on the topic of quizzes.
+					The application was created for the purpose of learning and testing
+					in an easier way than scrolling through scripts from
+					subject Theoretical Foundations of Informatics.
+					The application is available for download on the Google Play Store.</p>
+				<center>
+					<a href='https://play.google.com/store/apps/details?id=com.marekguran.tzi&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+						<img alt='Get it on Google Play' 
+						src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' width="200px"/>
+					</a>
+				</center>
+			  </div>
+			</div>
+			<div class="project">
+			  <div class="project-image">
+				<img src="images/piskvorky.png" alt="Android Hra Piškvorky"/>
+			  </div>
+			  <div class="project-title">
+				<h2>Android Game Material You Tic Tac Toe</h2>
+			  </div>
+			  <div class="project-description">
+				<p>A simple game on the theme: Tic Tac Toe.
+					The game is based purely on Material You design.
+					It is only available for devices with Android version 12+.</p>
+					<center>
+						<a href="https://play.google.com/store/apps/details?id=com.marekguran.tictactoe&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+						target="_blank">
+						<img alt="Get it on Google Play"
+							src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+							width="200px" />
+					</a>
+						</center>
+			  </div>
+			</div>
+			<div class="project">
+				<div class="project-image">
+				  <img src="images/zivotopis.png" alt="Android Aplikácia Zivotopis"/>
+				</div>
+				<div class="project-title">
+				  <h2>Android app my CV</h2>
+				</div>
+				<div class="project-description">
+				  <p>My CV as an Android Application. It's my very first app on which
+					I have learned switching fragments, working with WebView and styling the application in Material You.
+					Also I have made the application in Java.
+				  </p>
+				</div>
+			</div>
+			<div class="project">
+				<div class="project-image">
+				  <img src="images/lineage.png" alt="LineageOs"/>
+				</div>
+				<div class="project-title">
+				  <h2>LineageOs</h2>
+				</div>
+				<div class="project-description">
+				  <p>My biggest project yet... I have created an operating system from the LineageOs distribution.
+					This operating system is based on Android 11 version and is for Xiaomi Mi A2.
+					It is in the basic set without Google services (Google Play Store and others).
+					It's completely pure Android with the most basic apps. However, anyone can install
+					these applications (Google Play Store and others). Just below you can also see how many people have downloaded this version of my OS for this smartphone.</p>
+					<center>
+						<a href="https://sourceforge.net/projects/lineageos-jasmine-sprout/files/latest/download"
+							target="_blank"><img alt="Download LineageOS (jasmine_sprout)"
+								src="https://img.shields.io/sourceforge/dt/lineageos-jasmine-sprout.svg"
+								style="width: 130px"></a>
+					</center>
+				</div>
+			  </div>
+		  </div>
+		</div>
+	  </section>
+	  <section class="contact">
+		<div class="content">
+		  <ul class="socials">
+			<li class="social">
+			  <a href="mailto:guran.marek1999@gmail.com" target="_blank" class="email">
+				<i class="fa fa-envelope" aria-hidden="true"></i>
+			  </a>
+			</li>
+			<li class="social">
+			  <a href="https://www.linkedin.com/in/marek-guran/" target="_blank" class="linkedin">
+				<i class="fab fa-linkedin" aria-hidden="true"></i>
+			  </a>
+			</li>
+			<li class="social">
+			  <a href="https://github.com/marek-guran" target="_blank" class="github">
+				<i class="fab fa-github" aria-hidden="true"></i>
+			  </a>
+			</li>
+			<li class="social">
+				<a href="https://www.facebook.com/marek.guran" target="_blank" class="facebook">
+				  <i class="fab fa-facebook" aria-hidden="true"></i>
+				</a>
+			  </li>
+		  </ul>
+		  <div class="clear"></div>
+		</div>
+	  </section>
+	  <footer class="footer">
+		<p id="copyright"></p>
+	  </footer>
+</body>
+
+</html>
